@@ -1,0 +1,66 @@
+(Component StateComponent {
+    build (CRef col {
+        component #Column
+        children [
+            (CIf if {
+                condition `button.pressed`
+                then (CRef then {
+                    component #TextView
+                    data [
+                        ({
+                            prop #data
+                            bind true
+                            bindTo `'Button pressed'`
+                        })
+                    ]
+                })
+                else (CRef else {
+                    component #TextView
+                    data [
+                        ({
+                            prop #data
+                            bind true
+                            bindTo `'Button NOT pressed'`
+                        })
+                    ]
+                })
+            })
+            (CRef button {
+                component #Button
+                states [
+                    (pressed {
+                        type ({
+                            primitive Boolean
+                        })
+                        defaultValue `true`
+                    })
+                    (numPressed {
+                        type ({
+                            primitive Integer
+                        })
+                    })
+                ]
+                child (CRef buttonText {
+                    component #TextView
+                    data [
+                        ({
+                            prop #data
+                            bind true
+                            bindTo `'Hit Me!'`
+                        })
+                    ]
+                })
+            })
+        ]
+    })
+    eventHandlers [
+        (handlePress {
+            type OnEvent
+            on #button
+            event #onPressed
+            block ```
+                button.pressed = true;
+            ```
+        })
+    ]
+})

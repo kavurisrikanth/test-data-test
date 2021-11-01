@@ -1,0 +1,82 @@
+(ComponentTestData MainComponentData5248 {
+    data [
+        (fromOutside {
+            primitiveValue [
+                ''
+            ]
+        })
+        (data {
+            primitiveValue [
+                'MyData'
+            ]
+        })
+    ]
+    page #MainComponent
+    values [
+        (_child_children_2_build_children_1_build_children_0_value {
+            primitiveValue [
+                'true'
+            ]
+        })
+        (_child_children_1_build_children_1_build_children_0_then_data {
+            primitiveValue [
+                'Button pressed'
+            ]
+        })
+        (_child_children_1_build_children_1_build_children_0_value {
+            primitiveValue [
+                'true'
+            ]
+        })
+        (_child_children_2_build_children_0_data {
+            primitiveValue [
+                'BoundValue'
+            ]
+        })
+        (_child_children_2_build_children_1_build_children_1_build_child_color {
+            primitiveValue [
+                '00000000'
+            ]
+        })
+        (_child_children_1_build_children_1_build_children_1_build_child_color {
+            primitiveValue [
+                '00000000'
+            ]
+        })
+        (_child_children_1_build_children_1_build_children_1_child_data {
+            primitiveValue [
+                'Hit Me!'
+            ]
+        })
+        (_child_children_2_build_children_1_build_children_1_child_data {
+            primitiveValue [
+                'Hit Me!'
+            ]
+        })
+        (_child_children_0_data {
+            primitiveValue [
+                'MyData'
+            ]
+        })
+        (_child_children_1_build_children_0_data {
+            primitiveValue [
+                'AssignedValue'
+            ]
+        })
+        (_child_children_2_build_children_1_build_children_1_build_child_child_child_value {
+            primitiveValue [
+                'false'
+            ]
+        })
+        (_child_children_1_build_children_1_build_children_1_build_child_child_child_value {
+            primitiveValue [
+                'false'
+            ]
+        })
+        (_child_children_2_build_children_1_build_children_0_then_data {
+            primitiveValue [
+                'Button pressed'
+            ]
+        })
+    ]
+})

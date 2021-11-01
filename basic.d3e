@@ -1,0 +1,87 @@
+(StyleTheme basic {
+    name 'Basic'
+    font 'Poppins'
+    fontSize 13.0
+    colors [
+        ({
+            color '@c1'
+            hexCode 'FF16163A'
+        })
+        ({
+            color '@c2'
+            hexCode 'FFFE941E'
+        })
+        ({
+            color '@c3'
+            hexCode 'FFD7DDE2'
+        })
+        ({
+            color '@c4'
+            hexCode 'FF8C8C8C'
+        })
+        ({
+            color '@c5'
+            hexCode 'FFFFFFFF'
+        })
+        ({
+            color '@c6'
+            hexCode 'FF00875A'
+        })
+        ({
+            color '@c7'
+            hexCode 'FFC71306'
+        })
+        ({
+            color '@c8'
+            hexCode 'FFCCE8FE'
+        })
+        ({
+            color '@c9'
+            hexCode 'FF766DFE'
+        })
+        ({
+            color '@c10'
+            hexCode 'FF303151'
+        })
+        ({
+            color '@c11'
+            hexCode 'FF565872'
+        })
+        ({
+            color '@c12'
+            hexCode 'FF42436A'
+        })
+        ({
+            color '@c13'
+            hexCode 'FF2D2D50'
+        })
+        ({
+            color '@c14'
+            hexCode 'FF00A2FF'
+        })
+        ({
+            color '@c15'
+            hexCode 'FFE3C54F'
+        })
+        ({
+            color '@c16'
+            hexCode 'FFF0F4FC'
+        })
+        ({
+            color '@c17'
+            hexCode 'FFD4EAFF'
+        })
+        ({
+            color '@c18'
+            hexCode 'FF000000'
+        })
+        ({
+            color '@c19'
+            hexCode 'FFFCA23D'
+        })
+        ({
+            color '@c20'
+            hexCode 'FFFFFFFF'
+        })
+    ]
+})

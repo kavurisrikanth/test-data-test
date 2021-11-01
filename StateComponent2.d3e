@@ -1,0 +1,73 @@
+(Component StateComponent2 {
+    properties [
+        (nums {
+            type ({
+                primitive Integer
+            })
+            collection true
+            internal true
+        })
+    ]
+    build (CRef col {
+        component #Row
+        child (CFor cFor {
+            items `this.nums`
+            var 'num'
+            item (CRef col2 {
+                component #Column
+                children [
+                    (CIf if {
+                        condition `button.pressed`
+                        then (CRef then {
+                            component #TextView
+                            data [
+                                ({
+                                    prop #data
+                                    bind true
+                                    bindTo `'Button pressed'`
+                                })
+                            ]
+                        })
+                        else (CRef else {
+                            component #TextView
+                            data [
+                                ({
+                                    prop #data
+                                    bind true
+                                    bindTo `'Button NOT pressed'`
+                                })
+                            ]
+                        })
+                    })
+                    (CRef button {
+                        component #Button
+                        states [
+                            (pressed {
+                                type ({
+                                    primitive Boolean
+                                })
+                            })
+                        ]
+                        child (CRef buttonText {
+                            component #TextView
+                            data [
+                                ({
+                                    prop #data
+                                    bind true
+                                    bindTo `'Hit Me!'`
+                                })
+                            ]
+                        })
+                    })
+                ]
+            })
+        })
+    })
+    eventHandlers [
+        (onInit {
+            block ```
+                this.nums = [1, 2, 3, 4];
+            ```
+        })
+    ]
+})

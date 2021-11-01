@@ -1,0 +1,67 @@
+(D3EPage MainComponent {
+    category 'UserDefined'
+    properties [
+        (fromOutside {
+            name 'FromOutside'
+            type (String {
+                primitive String
+            })
+        })
+        (data {
+            name 'Data'
+            type (String {
+                primitive String
+            })
+            internal true
+        })
+    ]
+    build (CRef test {
+        name 'test'
+        component #Container
+        child (CRef id {
+            name 'Id'
+            component #Column
+            children [
+                (CRef id2 {
+                    name 'Id2'
+                    component #TextView
+                    data [
+                        ({
+                            prop #data
+                            bind true
+                            bindTo `this.data`
+                        })
+                    ]
+                })
+                (CRef id4 {
+                    name 'Id4'
+                    component #SubComponent
+                    data [
+                        ({
+                            prop #title
+                            value 'AssignedValue'
+                        })
+                    ]
+                })
+                (CRef id3 {
+                    name 'Id3'
+                    component #SubComponent
+                    data [
+                        ({
+                            prop #title
+                            bind true
+                            bindTo `'BoundValue'`
+                        })
+                    ]
+                })
+            ]
+        })
+    })
+    eventHandlers [
+        (onInit {
+            block ```
+                this.data = 'MyData';
+            ```
+        })
+    ]
+})

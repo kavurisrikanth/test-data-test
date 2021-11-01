@@ -1,0 +1,61 @@
+(ComponentTestData StateComponentData5238 {
+    component #StateComponent
+    values [
+        (_children_1_build_child_color {
+            primitiveValue [
+                '00000000'
+            ]
+        })
+        (_children_1_child_data {
+            primitiveValue [
+                'Hit Me!'
+            ]
+        })
+        (_children_0_value {
+            primitiveValue [
+                'false'
+            ]
+        })
+        (_children_0_else_data {
+            primitiveValue [
+                'Button NOT pressed'
+            ]
+        })
+        (_children_1_build_child_child_child_value {
+            primitiveValue [
+                'false'
+            ]
+        })
+    ]
+})
+
+(ComponentTestData StateComponentData5238 {
+    component #StateComponent
+    values [
+        (_children_1_build_child_color {
+            primitiveValue [
+                '00000000'
+            ]
+        })
+        (_children_1_child_data {
+            primitiveValue [
+                'Hit Me!'
+            ]
+        })
+        (_children_0_value {
+            primitiveValue [
+                'false'
+            ]
+        })
+        (_children_0_else_data {
+            primitiveValue [
+                'Button NOT pressed'
+            ]
+        })
+        (_children_1_build_child_child_child_value {
+            primitiveValue [
+                'false'
+            ]
+        })
+    ]
+})

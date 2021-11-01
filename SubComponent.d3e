@@ -1,0 +1,46 @@
+(Component SubComponent {
+    category 'UserDefined'
+    path 'Component'
+    properties [
+        (title {
+            type ({
+                primitive String
+            })
+        })
+        (assigned {
+            type ({
+                primitive String
+            })
+        })
+        (bound {
+            type ({
+                primitive String
+            })
+        })
+    ]
+    build (CRef column {
+        name 'column'
+        component #Column
+        data [
+        
+        ]
+        children [
+            (CRef id {
+                component #TextView
+                data [
+                    ({
+                        prop #data
+                        bind true
+                        bindTo `this.title`
+                    })
+                ]
+            })
+            (CRef one {
+                component #StateComponent
+            })
+            (CRef two {
+                component #StateComponent2
+            })
+        ]
+    })
+})

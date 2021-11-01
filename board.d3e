@@ -1,0 +1,14 @@
+(ComponentBoard LoginScreen {
+    title 'LoginScreen'
+    canvas #FirstCanvas
+    x 10
+    y 10
+    width 500
+    height 600
+    theme #basic
+    page #MainComponent
+    views [
+        #MainComponentData5248
+    ]
+    data #MainComponentData5248
+})

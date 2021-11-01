@@ -1,0 +1,8 @@
+(Project TestDataTest2 {
+    name 'TestDataTest2'
+    domain 'd3e.TestDataTest2'
+    package 'TestDataTest2'
+    targets [
+        FlutterFrontEnd
+    ]
+})

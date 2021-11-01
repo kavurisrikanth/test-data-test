@@ -1,0 +1,14 @@
+(ComponentBoard StateBoard {
+    title 'StateBoard'
+    canvas #FirstCanvas
+    x 10
+    y 10
+    width 500
+    height 600
+    component #StateComponent
+    theme #basic
+    views [
+        #StateComponentData5252
+    ]
+    data #StateComponentData5252
+})
