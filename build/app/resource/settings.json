@@ -1,0 +1,7 @@
+{
+  "baseHttpUrl": "http://127.0.0.1:8080",
+  "baseWSurl": "ws://127.0.0.1:8080",
+  "buildNumber": "1",
+  "buildVersion": "1.0.0",
+  "gitShellPort": "22"
+}

@@ -8,7 +8,7 @@
     component #StateComponent
     theme #basic
     views [
-        #StateComponentData5252
+        #StateComponentData5237
     ]
-    data #StateComponentData5252
+    data #StateComponentData5237
 })
